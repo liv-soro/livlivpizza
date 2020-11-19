@@ -15,7 +15,7 @@ public class Servlet extends HttpServlet {
                 "\n" +
                 "<HEAD>\n" +
                 "\n" +
-                "<TITLE> Pizzapizzaliv </TITLE>\n" +
+                "<TITLE>Livliv's website</TITLE>\n" +
                 "\n" +
                 "</HEAD> \n" +
                 "\n" +
@@ -30,6 +30,14 @@ public class Servlet extends HttpServlet {
         req.getServletPath();
         //resp.getWriter().write(req.getServletPath());
     }
+
+    @Override
+    public void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String reqBody=req.getReader().lines().collect(Collectors.joining(System.lineSeparator()));
+        resp.setContentType("text/html");
+        resp.getWriter().write("Thank you client! "+reqBody);
+    }
+
 
 }
 
