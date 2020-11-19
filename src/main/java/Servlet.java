@@ -24,7 +24,7 @@ public class Servlet extends HttpServlet {
                 "here's some website you'll like <a href=\"https://www.bbcgoodfood.com/recipes/collection/pasta-recipes\"> (click here!)</a>\n" +
                 "<br> <b>hope</b> you <i>like</i> it!" +
                 "\n" +
-                "</BODY>\n"
+                "</BODY>\n" +
                 "</HTML>"
         );
         req.getServletPath();
