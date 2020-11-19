@@ -13,5 +13,5 @@ cache:
 deploy:
   provider: heroku
   api_key: 165940ed-88a1-445f-805c-efdcebbef1b4
-  app: thenameofmygithubproject
+  app: Livlivpizza
   skip_cleanup: true
